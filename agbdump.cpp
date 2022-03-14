@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 
   for (size_t i = 0; i < songTable.GetNumSongs(); ++i) {
     std::stringstream ss;
-    ss << "song" << std::setfill('0') << std::setw(3) << i << ".wav";
+    ss << std::setfill('0') << std::setw(3) << i << ".wav";
     std::string filename = ss.str();
 
     std::cout << filename << std::endl;
